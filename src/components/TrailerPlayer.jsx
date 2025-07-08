@@ -13,7 +13,7 @@ const TrailerPlayer = () => {
     <div className="bg-indigo">
       <div className='w-full max-w-[1400px] mx-auto'>
         <div className='min-h-screen flex flex-col items-center justify-center p-4 text-white '>
-          <Link href={backLink} className="text-blue-400 underline mb-4">← Back to Movies</Link>
+          <Link to={backLink} className="text-blue-400 underline mb-4">← Back to Movies</Link>
           <div className="w-full max-w-4xl aspect-video border border-solid">
             <iframe
               width="100%"
