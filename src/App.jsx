@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Header from './components/Header'
 import Hero from './sections/Hero'
@@ -10,14 +10,13 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Header />
-      <Hero />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/trailer/:videoKey" element={<TrailerPlayer />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </>
   )
 }
