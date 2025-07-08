@@ -12,6 +12,7 @@ function App() {
     <>
     <BrowserRouter>
       <Header />
+      <Hero />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/trailer/:videoKey" element={<TrailerPlayer />} />
